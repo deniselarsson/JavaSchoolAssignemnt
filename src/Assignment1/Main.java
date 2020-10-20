@@ -4,7 +4,6 @@ public class Main {
 
     //Huvudmetod {
 
-
         // Skapar ett nytt objekt för person1 av klassen Person och sätter parameter age (int) via constructor.
         // Skapar ett nytt objekt för person2 av klassen Person och sätter parameter age (int) via constructor.
         // Skapar ett nytt objekt för person3 av klassen Person och sätter parameter age (int) via constructor.
