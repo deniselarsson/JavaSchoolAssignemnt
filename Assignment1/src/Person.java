@@ -1,5 +1,3 @@
-package Assignment1;
-
 public class Person {
 
     // private variabel med namn age av typ int
@@ -10,3 +8,4 @@ public class Person {
 
     // Getter metod med retur typ int för att returnera värdet av attributet age
 }
+

@@ -1,8 +1,6 @@
-package com.ecutbildning.javagrund;
-
 import java.util.Scanner;
 
-public class Exercise1 {
+ class ExerciseWithJack1 {
 
     public static void main (String[] args) {
 
@@ -34,4 +32,3 @@ public class Exercise1 {
         System.out.println("Subtraction: " + total);
     }
 }
-
