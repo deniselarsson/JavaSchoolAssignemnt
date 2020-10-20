@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
- class ExerciseWithJack1 {
+class ExcerciseWithJack1 {
 
     public static void main (String[] args) {
 
