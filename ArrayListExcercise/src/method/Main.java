@@ -6,15 +6,11 @@ public class Main {
 
     public static void main (String[] args) {
 
-        ArrayList();
-
-    }
-    /*
-      Skriv en metod som skapar en arrayList, fyller en arrayList och returnerar en arrayList.
-      ArrayListenska lagras i en variabel i samband med metodanropet.
-      Variabeln ska skrivas ut i sout i konsollen.
-       */
-    public static void ArrayList () {
+        /**
+         * Skriv en metod som skapar en arrayList, fyller en arrayList och returnerar en arrayList.
+         * ArrayListenska lagras i en variabel i samband med metodanropet.
+         * Variabeln ska skrivas ut i sout i konsollen.
+         */
 
         ArrayList<String> names = new ArrayList<>();
 
@@ -26,6 +22,8 @@ public class Main {
         System.out.println(names);
     }
 }
+
+
 
 
 

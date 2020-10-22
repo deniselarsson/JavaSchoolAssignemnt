@@ -1,12 +1,27 @@
 package object;
 
+//Skapa en klass Car.
 public class Car {
 
-        /*
-    Skapa en klass Car.
-    Varje Car ska ha en String color och String color.
-    Skapa en array som håller10 bilar och lägg till 10 bilar i den.
-    Skriv ut arraylistan i konsolen
-     */
+    //String color.
+    //String reg nummer
+    private String color;
+    private String regNumber;
 
+    public Car (String color, String regNumber) {
+        this.color = color;
+        this.regNumber = regNumber;
+    }
+    public String getRegNumber () {
+        return this.regNumber;
+    }
+    public void setRegNumber (String regNumber) {
+        this.regNumber = regNumber;
+    }
+    public String getColor () {
+        return this.color;
+    }
+    public void setColor (String color) {
+        this.color = color;
+    }
 }
