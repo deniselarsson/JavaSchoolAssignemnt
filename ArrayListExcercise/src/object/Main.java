@@ -22,19 +22,19 @@ public class Main {
         carList.add(new Car("Grey", "YER 645"));
 
         //Skriv ut arraylistan i konsolen
-        ShowCar(carList.get(0));
-        ShowCar(carList.get(1));
-        ShowCar(carList.get(2));
-        ShowCar(carList.get(3));
-        ShowCar(carList.get(4));
-        ShowCar(carList.get(5));
-        ShowCar(carList.get(6));
-        ShowCar(carList.get(7));
-        ShowCar(carList.get(8));
-        ShowCar(carList.get(9));
+        showCar(carList.get(0));
+        showCar(carList.get(1));
+        showCar(carList.get(2));
+        showCar(carList.get(3));
+        showCar(carList.get(4));
+        showCar(carList.get(5));
+        showCar(carList.get(6));
+        showCar(carList.get(7));
+        showCar(carList.get(8));
+        showCar(carList.get(9));
 
     }
-    public static void ShowCar(Car car){
+    public static void showCar(Car car){
 
         System.out.println("Car registration number is: " + car.getRegNumber());
         System.out.println("Car color is: " + car.getColor()+ "\n");
