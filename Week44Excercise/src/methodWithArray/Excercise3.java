@@ -12,7 +12,6 @@ public class Excercise3 {
         for (String animal : animals){
             System.out.println(animal);
         }
-
     }
 
     /*

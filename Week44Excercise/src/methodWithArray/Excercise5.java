@@ -19,11 +19,8 @@ public class Excercise5 {
     Skriv en metod som tar emot och returnerar en ArrayList av djurReturen ska tas emot
     i metodanropet i main och skrivas ut där
      */
-
-
     public static ArrayList<String> getAnimals(ArrayList<String> animals){
 
         return animals;
     }
-
 }
