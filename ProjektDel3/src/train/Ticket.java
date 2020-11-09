@@ -2,19 +2,21 @@ package train;
 
 import java.util.Scanner;
 import static train.Main.tickets;
-import static train.Person.createCustomer;
+import static train.Costumer.createCustomer;
 
 public class Ticket {
 
-    Person person;
+    Costumer costumer;
     TicketType ticketType;
 
-    Ticket (Person person, TicketType ticketType) {
-        this.person = person;
+    Ticket (Costumer costumer, TicketType ticketType) {
+        this.costumer = costumer;
         this.ticketType = ticketType;
     }
 
     //Hämtar pris för antingen biljett eller månadskort
+    //Här använder vi av en if and else metod som returnera ticket type vi får från enum klass
+    //Om ticket type är == dag så returnera den getDay pris metoden annars returnera den get month pris metoden
     public int getTicketPrice () {
 
         if (this.ticketType == TicketType.DAY) {
@@ -25,10 +27,10 @@ public class Ticket {
         }
     }
 
-    //Hämtar pris för en månadskort utifrån åldern
+    //Denna metoden Hämtar pris för en månadskort utifrån åldern
     private int getMonthPrice () {
 
-        if (person.getAge() < 18 || person.getAge() >= 65) {
+        if (costumer.getAge() < 18 || costumer.getAge() >= 65) {
             return 450;
         }
         else {
@@ -36,10 +38,10 @@ public class Ticket {
         }
     }
 
-    //Hämtar pris för en biljett utifrån ålderm
+    //Denna metoden Hämtar pris för en biljett utifrån åldern
     private int getDayPrice () {
 
-        if (person.getAge() < 18 || person.getAge() >= 65) {
+        if (costumer.getAge() < 18 || costumer.getAge() >= 65) {
             return 20;
         }
         else {
@@ -66,11 +68,16 @@ public class Ticket {
     //Hur mycket personen ska betala utifrån åldern
     public static void sellTicket () {
 
-        Person person = createCustomer();
+        //skapa en ny person
+        Costumer costumer = createCustomer();
+        //väljer en ny ticket type
         TicketType ticketType = selectTicketType();
-        Ticket ticket = new Ticket(person, ticketType);
+
+        //parameter från ovan
+        Ticket ticket = new Ticket(costumer, ticketType);
 
         tickets.add(ticket);
+        //den ligger fortfarande kvar i listan
         System.out.println(ticket.getTicketPrice() + " kr");
     }
 }
