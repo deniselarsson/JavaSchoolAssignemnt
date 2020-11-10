@@ -1,36 +1,34 @@
 package train;
 
 import java.util.Scanner;
-
 import static train.Main.tickets;
+import static train.Customer.createCustomer;
 
 public class Ticket {
 
-    Costumer costumer;
+    Customer customer;
     TicketType ticketType;
 
-    Ticket (Costumer costumer, TicketType ticketType) {
-        this.costumer = costumer;
+    Ticket (Customer customer, TicketType ticketType) {
+        this.customer = customer;
         this.ticketType = ticketType;
     }
 
     //Hämtar pris för antingen biljett eller månadskort
-    //Här använder vi av en if and else metod som returnera ticket type vi får från enum klass
-    //Om ticket type är == dag så returnera den getDay pris metoden annars returnera den get month pris metoden
-    public int getTicketPrice () {
+    public int ticketPrice () {
 
         if (this.ticketType == TicketType.DAY) {
-            return getDayPrice();
+            return validateDayPrice();
         }
         else {
-            return getMonthPrice();
+            return validateMonthPrice();
         }
     }
 
-    //Denna metoden Hämtar pris för en månadskort utifrån åldern
-    private int getMonthPrice () {
+    //Hämtar pris för en månadskort utifrån åldern
+    private int validateMonthPrice () {
 
-        if (costumer.getAge() < 18 || costumer.getAge() >= 65) {
+        if (customer.getAge() < 18 || customer.getAge() >= 65) {
             return 450;
         }
         else {
@@ -38,10 +36,10 @@ public class Ticket {
         }
     }
 
-    //Denna metoden Hämtar pris för en biljett utifrån åldern
-    private int getDayPrice () {
+    //Hämtar pris för en biljett utifrån ålderm
+    private int validateDayPrice () {
 
-        if (costumer.getAge() < 18 || costumer.getAge() >= 65) {
+        if (customer.getAge() < 18 || customer.getAge() >= 65) {
             return 20;
         }
         else {
@@ -57,9 +55,7 @@ public class Ticket {
         System.out.print("Enter 1 for day, enter 2 for month: ");
         int input = scan.nextInt();
 
-        //TicketType är en Enum
         if (input == 1) {
-
             return TicketType.DAY;
         }
         else {
@@ -68,22 +64,14 @@ public class Ticket {
     }
 
     //Hur mycket personen ska betala utifrån åldern
+    //Ticket has a customer
     public static void sellTicket () {
 
-        //skapa en ny kund
-        //Resultat av metoden sparas i costumer variabel
-        Costumer costumer = Costumer.createCustomer();
+        Customer customer = createCustomer();
+        TicketType ticketType = selectTicketType();
+        Ticket ticket = new Ticket(customer, ticketType);
 
-        //väljer en ny ticket type
-        TicketType ticketType = Ticket.selectTicketType();
-
-        //parameter från ovan
-        Ticket ticket = new Ticket(costumer, ticketType);
-
-        //Lägger till ticket i arralist
         tickets.add(ticket);
-
-        //den anropar getTicketPrice för att får priset
-        System.out.println(ticket.getTicketPrice() + " kr");
+        System.out.println(ticket.ticketPrice() + " kr");
     }
 }
