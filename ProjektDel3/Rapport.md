@@ -26,7 +26,7 @@ Kund, biljett, biljett typ: blev våra klasser.
 #####Objekt: Scanner
 
 ####Metoder:
-printNames () createCustomer() getTicketPrice() getMonthPrice() getDayPrice() selectTicketType() sellTicket()
+printNames () createCustomer() ticketPrice() validateMonthPrice() validateDayPrice() selectTicketType() sellTicket()
 
 #####Variaber: 
 Costumer costumer; TicketType ticketType; String name; int age; enum DAY; enum MONTH;
@@ -47,6 +47,8 @@ Vi valde Scanner för att användaren ska kunna mata in input och att vi kan skr
 #####4/11/2020: Idag har vi skapat UML diagram, färdigställt koden, arbetat med rapporten.
 
 #####6/11/2020: Idag sitter jag själv och jobba, fick lite feedback, ändrade class namnet från costumer till costumer och la till en else i main metoden.
+
+#####10/11/2020: Idag har vi uppdaterat UML, ändrat namn på några metoder och visat Sandra vår kod. 
 
 #####På vilket sätt har ni använt er av Objektorentering? 
 Vi har använt oss av objektorientering genom att använda oss av 3 olika klasser vars objekt 
