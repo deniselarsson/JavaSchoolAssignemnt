@@ -1,8 +1,8 @@
 package train;
 
 import java.util.Scanner;
+
 import static train.Main.tickets;
-import static train.Costumer.createCustomer;
 
 public class Ticket {
 
@@ -57,7 +57,9 @@ public class Ticket {
         System.out.print("Enter 1 for day, enter 2 for month: ");
         int input = scan.nextInt();
 
+        //TicketType är en Enum
         if (input == 1) {
+
             return TicketType.DAY;
         }
         else {
@@ -68,16 +70,20 @@ public class Ticket {
     //Hur mycket personen ska betala utifrån åldern
     public static void sellTicket () {
 
-        //skapa en ny person
-        Costumer costumer = createCustomer();
+        //skapa en ny kund
+        //Resultat av metoden sparas i costumer variabel
+        Costumer costumer = Costumer.createCustomer();
+
         //väljer en ny ticket type
-        TicketType ticketType = selectTicketType();
+        TicketType ticketType = Ticket.selectTicketType();
 
         //parameter från ovan
         Ticket ticket = new Ticket(costumer, ticketType);
 
+        //Lägger till ticket i arralist
         tickets.add(ticket);
-        //den ligger fortfarande kvar i listan
+
+        //den anropar getTicketPrice för att får priset
         System.out.println(ticket.getTicketPrice() + " kr");
     }
 }

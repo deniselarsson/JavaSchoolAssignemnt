@@ -3,11 +3,9 @@ package train;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static train.Costumer.printNames;
-import static train.Ticket.sellTicket;
-
 public class Main {
 
+    //en lista som spara alla tickets
     static ArrayList<Ticket> tickets = new ArrayList<>();
 
     public static void main (String[] args) {
@@ -17,14 +15,15 @@ public class Main {
             Scanner scan = new Scanner(System.in);
 
             System.out.print("Sell ticket enter 1, print names enter 2: ");
+
             int input = scan.nextInt();
 
             if (input == 1) {
-                sellTicket();
+               Ticket.sellTicket();
             }
             else if (input==2){
                 System.out.println("\n" + "**********LIST OF PASSENGERS**********");
-                printNames(tickets);
+                Costumer.printNames(tickets);
             }
             else{
                 System.out.println("Sorry, it's not a correct selection.Try again!");

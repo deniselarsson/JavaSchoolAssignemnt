@@ -3,7 +3,7 @@ package train;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//När man skapa en instans av Person så ska parametrar name och age anges
+//När man skapa en instans av costumer så ska parametrar name och age anges
 public class Costumer {
 
     private String name;
@@ -33,7 +33,7 @@ public class Costumer {
         System.out.print("Enter customers age: ");
         int age = scan.nextInt();
 
-        //skapa en instans av person
+        //skapa en instans av costumer
         Costumer costumer = new Costumer(name, age);
         return costumer;
 
@@ -42,7 +42,11 @@ public class Costumer {
     //Loopen som skriver ut namn från listan
     public static void printNames (ArrayList<Ticket> tickets) {
 
+        //(dataType variabel : array || collection
+        //it stores the element in the variabel and executes the body each time
         for (Ticket ticket : tickets) {
+
+            //ticket har en costumer och i sin tur har en namn
             System.out.println(ticket.costumer.getName()+ "\n");
         }
     }
