@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ArrayListExcercise/ArrayListExcercise.iml" filepath="$PROJECT_DIR$/ArrayListExcercise/ArrayListExcercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ArvAbstraction/ArvAbstraction.iml" filepath="$PROJECT_DIR$/ArvAbstraction/ArvAbstraction.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Assignment1/Assignment1.iml" filepath="$PROJECT_DIR$/Assignment1/Assignment1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Assignment2/Assignment2.iml" filepath="$PROJECT_DIR$/Assignment2/Assignment2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/Assignment1/Assignment1.iml" filepath="$PROJECT_DIR$/JavaBasic/Assignment1/Assignment1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/Assignment2/Assignment2.iml" filepath="$PROJECT_DIR$/JavaBasic/Assignment2/Assignment2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic/JavaBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ProgrammeringEC.iml" filepath="$PROJECT_DIR$/.idea/ProgrammeringEC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProjektDel3/ProjektDel3.iml" filepath="$PROJECT_DIR$/ProjektDel3/ProjektDel3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Week44Excercise/Week44Excercise.iml" filepath="$PROJECT_DIR$/Week44Excercise/Week44Excercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/ProjektDel3/ProjektDel3.iml" filepath="$PROJECT_DIR$/JavaBasic/ProjektDel3/ProjektDel3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic/Week44Excercise/Week44Excercise.iml" filepath="$PROJECT_DIR$/JavaBasic/Week44Excercise/Week44Excercise.iml" />
     </modules>
   </component>
 </project>
