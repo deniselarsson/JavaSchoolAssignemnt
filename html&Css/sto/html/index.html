@@ -4,48 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+             body{
+             background-color:#F8F8FF;
+             }
+             table.headerList{
+             margin-left: auto;
+             margin-right: 50px;
+             margin-bottom: 30px;
+            }
+            .centered{
+            text-align: center;
+            font-size: 30px;
+            }
+            .img {
+            position:static;
+            }
+            .text-block{
+             font-size: 50px;
+             position: absolute;
+             top: 35%;
+             right: 32%;
+             color: Black;
+            }
+             .footer{
+            text-align: center;
+            margin-top:400px;
+            }
+            .logo{
+            margin-left: 100px;
+            }
+            #copyright{
+            text-align: center;
+            margin-top:50px;
+            }
 
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-.header {
-  border: 5px outset white;
-  background-color: lightgrey;
-  text-align: center;
-}
-
-.cointainer{
-    position: absolute;
-    text.align: center;
-}
-.centered{
-    position: absolute;
-    text.align: center;
-}
-
-</style>
-</head>
+        </style>
+    </head>
 <body>
-
-    <h1>Software Testing Online</h1>
-        <table>
-            <tr>
-                <th>STO</th>
-                <th>Services</th>
-                <th>About</th>
-                <th>Contact</th>
-            </tr>
-        </table>
-    <div>
-        <img src="../resources/facebook.png" alt="facebook logo" width="50" height="50">
-        <img src="../resources/instagram.png" alt="facebook logo" width="50" height="50">
-        <img src="../resources/linkedin.png" alt="facebook logo" width="50" height="50">
+<header>
+    <div id="siteTitle">
+        <img src="../resources/logo.png" alt="logo" width="100px" height="100px" class="logo">
     </div>
-<div class="cointainer">
-    <img src="../resources/pineapple.jpg" alt="facebook logo" width="2000" height="1000">
+    <span></span>
+    <table class="headerList">
+        <th class="services">Services</th>
+        <th class="about">About</th>
+        <th class="contacts">Contact</th>
+    </table>
+    </span>
+</header>
+<section>
+    <div class="container">
+        <img src="../resources/computer.jpg" alt="facebook logo" width="100%" height="800px">
+        <div class="text-block">
+            <h2>Software Testing Online</h2>
+        </div>
+    </div>
+</section>
+<section>
     <div class="centered">"A lot of testing from me to you or your company"</div>
-
-</div>
-
+</section>
+<footer class="footer">
+    <div>
+        <th><img src="../resources/facebook.png" alt="facebook logo" width="30px" height="30px"></th>
+        <th><img src="../resources/instagram.png" alt="facebook logo" width="30px" height="30px"></th>
+        <th><img src="../resources/linkedin.png" alt="facebook logo" width="30px" height="30px"></th>
+    </div>
+    <section>
+    <div id="copyright">© Copyright 2020</div>
+    </section>
+</footer>
 </body>
 </html>
