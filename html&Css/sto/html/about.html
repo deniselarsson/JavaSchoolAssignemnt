@@ -1,67 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-             body{
-             background-color:#F8F8FF;
-             }
-             table.headerList{
-             margin-left: auto;
-             margin-right: 50px;
-             margin-bottom: 30px;
-            }
-            #title{
-            text-align: center;
-            font-size: 35px;
-            }
-              .footer{
-            text-align: center;
-            margin-top:400px;
-            }
-            .logo{
-            margin-left: 100px;
-            }
-            #copyright{
-            text-align: center;
-            margin-top:50px;
-            }
-        </style>
-    </head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
 <body>
 <header>
-    <div id="siteTitle">
-        <img src="../resources/logo.png" alt="logo" width="100px" height="100px" class="logo">
-    </div>
-    <span></span>
-    <table class="headerList">
-        <th class="services">Services</th>
-        <th class="about">About</th>
-        <th class="contacts">Contact</th>
-    </table>
-</header>
-<section id ="title">
-    <h1>About</h1>
-    <span></span>
-    <p>“I co-founded this company because of my passion for testing and do this through <br>context driven testing.<br>
-        Testing is a challenging craft. I dare to be different <br>and think outside the box.
-        I am welcoming, creating and growing with the changes.<br>
-        I offer customer to have a free limit session of software testing service before you assign to a shorter<br>
-        assignment or part time assignment.”
-    </p>
-</section>
-<footer class="footer">
     <div>
-        <th><img src="../resources/facebook.png" alt="facebook logo" width="30px" height="30px"></th>
-        <th><img src="../resources/instagram.png" alt="facebook logo" width="30px" height="30px"></th>
-        <th><img src="../resources/linkedin.png" alt="facebook logo" width="30px" height="30px"></th>
+        <img src="../images/logo.png" alt="logo" class="logo">
     </div>
-    <section>
-        <div id="copyright">© Copyright 2020</div>
-    </section>
-</footer>
+    <nav class="block navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<section class="content title">
+    <div class="flex fill flex-column">
+        <h4>About</h4>
+        <p>“I co-founded this company because of my passion for testing and do this through <br>context driven
+            testing.<br>
+            Testing is a challenging craft. I dare to be different <br>and think outside the box.
+            I am welcoming, creating and growing with the changes.<br>
+            I offer customer to have a free limit session of software testing service before you assign to a shorter<br>
+            assignment or part time assignment.”
+        </p>
+    </div>
+
+    <footer>
+        <div>
+            <img src="../images/facebook.png" alt="facebook logo">
+            <img src="../images/instagram.png" alt="instagram logo">
+            <img src="../images/linkedin.png" alt="linkedin logo">
+        </div>
+        <section>
+            <div id="copyright">© Copyright 2020</div>
+        </section>
+    </footer>
+</section>
 </body>
+
 </html>
